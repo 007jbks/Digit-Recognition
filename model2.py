@@ -29,7 +29,7 @@ Dense(10,activation='softmax')
 	])
 
 model.compile(optimizer='adam',loss='sparse_categorical_crossentropy',metrics=['accuracy'])
-model.fit(x_train,y_train,epochs=1,validation_data=(x_test,y_test),verbose=1)
+model.fit(x_train,y_train,epochs=20,validation_data=(x_test,y_test),verbose=1)
 model.evaluate(x_test,y_test,verbose=1)
 
 from PIL import Image
